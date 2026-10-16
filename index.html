@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AutoShine — студия детейлинга премиум-класса. Профессиональный уход за автомобилем.">
+  <title>AutoShine — Студия детейлинга</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <header class="header" role="banner">
+      <a href="#" class="header__logo" aria-label="AutoShine — на главную">
+        Auto<span class="header__logo-accent">Shine</span>
+      </a>
+
+      <button class="header__menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+      <nav class="header__nav" id="main-nav" aria-label="Основная навигация">
+        <ul class="header__list">
+          <li><a href="#services" class="header__link">Услуги</a></li>
+          <li><a href="#about" class="header__link">О студии</a></li>
+          <li><a href="#contact-info" class="header__link">Контакты</a></li>
+          <li><a href="#contacts" class="header__link">Записаться</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Детейлинг<br>
+        <span class="hero__title-accent">премиум-класса</span>
+      </h1>
+
+      <p class="hero__description">
+        Профессиональный уход за автомобилем: керамика, полировка,
+        химчистка и защита кузова. Возвращаем машине безупречный вид.
+      </p>
+
+      <a href="#contacts" class="hero__cta">
+        <span class="hero__cta-label">Записаться</span>
+        <span class="hero__cta-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ============================================
+       НАШИ УСЛУГИ
+       ============================================ -->
+  <section class="services" id="services" aria-labelledby="services-title">
+    <div class="services__container">
+      <header class="services__header">
+        <p class="services__eyebrow">Что мы делаем</p>
+        <h2 class="services__title" id="services-title">
+          Наши <span class="services__title-accent">услуги</span>
+        </h2>
+        <p class="services__lead">
+          Полный цикл ухода за автомобилем: от полировки кузова
+          до защитных покрытий.
+        </p>
+      </header>
+
+      <ol class="services__list">
+
+        <!-- 01 — Полировка кузова (фото слева, текст справа) -->
+        <li class="services__item service">
+          <div class="service__media" aria-hidden="true">
+            <img
+              class="service__image"
+              src="images/service-01.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="600"
+            >
+            <span class="service__placeholder">Полировка</span>
+          </div>
+
+          <div class="service__body">
+            <span class="service__number" aria-hidden="true">01</span>
+            <h3 class="service__title">Полировка кузова</h3>
+            <p class="service__text">
+              Удаляем царапины, матовость и следы окисления. Возвращаем
+              лакокрасочному покрытию глубину цвета и зеркальный блеск.
+            </p>
+
+            <details class="service__details">
+              <summary class="service__toggle">
+                <span>Подробнее</span>
+              </summary>
+              <div class="service__details-body">
+                <p>
+                  Работаем в несколько этапов: мойка и обезжиривание,
+                  абразивная полировка, финишная антиголограммная
+                  обработка. Подбираем пасту и круг под состояние
+                  конкретного покрытия. После полировки кузов
+                  покрывается защитным составом.
+                </p>
+              </div>
+            </details>
+          </div>
+        </li>
+
+        <!-- 02 — Химчистка салона (текст слева, фото справа) -->
+        <li class="services__item service service--reverse">
+          <div class="service__media" aria-hidden="true">
+            <img
+              class="service__image"
+              src="images/service-02.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="600"
+            >
+            <span class="service__placeholder">Химчистка</span>
+          </div>
+
+          <div class="service__body">
+            <span class="service__number" aria-hidden="true">02</span>
+            <h3 class="service__title">Химчистка салона</h3>
+            <p class="service__text">
+              Глубокая очистка всех поверхностей: ткань, кожа, пластик,
+              потолок. Убираем пятна, запахи и следы эксплуатации.
+            </p>
+
+            <details class="service__details">
+              <summary class="service__toggle">
+                <span>Подробнее</span>
+              </summary>
+              <div class="service__details-body">
+                <p>
+                  Разбираем салон в необходимом объёме, работаем
+                  профессиональной химией и экстрактором. Отдельно
+                  обрабатываем кожу кондиционером, а пластик —
+                  защитным составом с матовым финишем. Сушим салон
+                  до полного удаления влаги.
+                </p>
+              </div>
+            </details>
+          </div>
+        </li>
+
+        <!-- 03 — Керамическое покрытие (фото слева, текст справа) -->
+        <li class="services__item service">
+          <div class="service__media" aria-hidden="true">
+            <img
+              class="service__image"
+              src="images/service-03.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="600"
+            >
+            <span class="service__placeholder">Керамика</span>
+          </div>
+
+          <div class="service__body">
+            <span class="service__number" aria-hidden="true">03</span>
+            <h3 class="service__title">Керамическое покрытие</h3>
+            <p class="service__text">
+              Формируем на кузове прочный гидрофобный слой, который
+              защищает лак от реагентов, ультрафиолета и мелких
+              загрязнений.
+            </p>
+
+            <details class="service__details">
+              <summary class="service__toggle">
+                <span>Подробнее</span>
+              </summary>
+              <div class="service__details-body">
+                <p>
+                  Наносим керамику только на подготовленную поверхность:
+                  сначала мойка и обезжиривание, затем — при необходимости
+                  лёгкая полировка. Состав наносится послойно, каждый
+                  слой полимеризуется. Финальный результат — плотный
+                  гидрофобный слой с выраженным эффектом мокрого блеска.
+                </p>
+              </div>
+            </details>
+          </div>
+        </li>
+
+        <!-- 04 — Защитная плёнка (текст слева, фото справа) -->
+        <li class="services__item service service--reverse">
+          <div class="service__media" aria-hidden="true">
+            <img
+              class="service__image"
+              src="images/service-04.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="600"
+            >
+            <span class="service__placeholder">Защита</span>
+          </div>
+
+          <div class="service__body">
+            <span class="service__number" aria-hidden="true">04</span>
+            <h3 class="service__title">Защитная плёнка</h3>
+            <p class="service__text">
+              Оклеиваем уязвимые зоны кузова прозрачной плёнкой, которая
+              принимает на себя удары камней и мелкие царапины.
+            </p>
+
+            <details class="service__details">
+              <summary class="service__toggle">
+                <span>Подробнее</span>
+              </summary>
+              <div class="service__details-body">
+                <p>
+                  Используем плёнки с самовосстанавливающимся верхним
+                  слоем. Оклеиваем капот, крылья, зеркала, зону погрузки
+                  и другие уязвимые участки. Кромки подворачиваются
+                  внутрь, чтобы защита была незаметной и долговечной.
+                </p>
+              </div>
+            </details>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+    <!-- ============================================
+       РЕЗУЛЬТАТЫ — СРАВНЕНИЕ ДО / ПОСЛЕ
+       ============================================ -->
+
+  <!-- О СТУДИИ: демонстрационный текст, заменить при запуске реального бизнеса -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="about__container">
+      <div class="about__intro">
+        <p class="section__eyebrow">Наш подход</p>
+        <h2 class="section__title" id="about-title">Внимание <em>к деталям</em></h2>
+        <p class="about__lead">AutoShine — демонстрационный сайт студии детейлинга. Здесь мы показываем, как может выглядеть премиальный сервис по уходу за автомобилем.</p>
+        <p class="about__text">В основе концепции — понятные этапы работ, аккуратная обработка поверхностей и индивидуальный подбор услуг под состояние автомобиля.</p>
+        <a class="about__link" href="#services">Посмотреть услуги <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="about__features" aria-label="Принципы работы">
+        <article class="about__feature"><span class="about__feature-num">01</span><h3>Внимание к покрытию</h3><p>Подбор обработки с учётом состояния кузова и салона.</p></article>
+        <article class="about__feature"><span class="about__feature-num">02</span><h3>Прозрачный процесс</h3><p>Понятное описание этапов и ожидаемого результата.</p></article>
+        <article class="about__feature"><span class="about__feature-num">03</span><h3>Бережный уход</h3><p>Акцент на сохранении внешнего вида автомобиля.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results" id="results" aria-labelledby="results-title">
+    <div class="results__container">
+      <header class="results__header">
+        <p class="results__eyebrow">Результаты</p>
+        <h2 class="results__title" id="results-title">
+          Результаты <span class="results__title-accent">нашей работы</span>
+        </h2>
+        <p class="results__lead">
+          Потяните ползунок, чтобы увидеть, как меняется автомобиль
+          после детейлинга.
+        </p>
+      </header>
+
+      <figure class="compare" id="compare">
+        <div class="compare__viewport" style="--pos: 50%;">
+          <!-- AFTER — нижний слой, всегда виден -->
+          <img
+            class="compare__image compare__image--after"
+            src="images/after.jpg"
+            alt=""
+            loading="lazy"
+            decoding="async"
+            width="1200"
+            height="800"
+          >
+
+          <!-- BEFORE — верхний слой, обрезается через clip-path -->
+          <img
+            class="compare__image compare__image--before"
+            src="images/before.jpg"
+            alt=""
+            loading="lazy"
+            decoding="async"
+            width="1200"
+            height="800"
+          >
+
+          <!-- Заглушка, если изображений нет -->
+          <div class="compare__fallback" aria-hidden="true">
+            <span class="compare__fallback-title">До / После</span>
+            <span class="compare__fallback-note">
+              Изображения появятся позже
+            </span>
+          </div>
+
+          <!-- Подписи ДО и ПОСЛЕ -->
+          <span class="compare__badge compare__badge--before" aria-hidden="true">До</span>
+          <span class="compare__badge compare__badge--after" aria-hidden="true">После</span>
+
+          <!-- Разделитель -->
+          <span class="compare__divider" aria-hidden="true"></span>
+        </div>
+
+        <!-- Ползунок -->
+        <div class="compare__controls">
+          <label class="compare__label" for="compare-range">Сравнение</label>
+          <input
+            class="compare__range"
+            id="compare-range"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            step="1"
+            aria-label="Сравнение фотографий до и после: переместите ползунок влево или вправо"
+          >
+        </div>
+
+        <figcaption class="compare__caption">
+          <span class="compare__caption-mark" aria-hidden="true">•</span>
+          Демонстрация интерфейса. Фотографии реальных работ студии
+          появятся позже.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+    <!-- ============================================
+       ЗАПИСАТЬСЯ НА ДЕТЕЙЛИНГ
+       ============================================ -->
+  <section class="booking" id="contacts" aria-labelledby="booking-title">
+    <div class="booking__container">
+      <header class="booking__header">
+        <p class="booking__eyebrow">Запись</p>
+        <h2 class="booking__title" id="booking-title">
+          Записаться на <span class="booking__title-accent">детейлинг</span>
+        </h2>
+        <p class="booking__lead">
+          Оставьте заявку — мы свяжемся с вами, чтобы согласовать
+          удобное время.
+        </p>
+      </header>
+
+      <form class="booking__form" id="booking-form" novalidate>
+        <!-- Имя -->
+        <div class="field">
+          <label class="field__label" for="booking-name">
+            Имя <span class="field__required" aria-hidden="true">*</span>
+          </label>
+          <input
+            class="field__input"
+            id="booking-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+            minlength="2"
+            maxlength="80"
+            aria-required="true"
+            aria-describedby="booking-name-error"
+          >
+          <p class="field__error" id="booking-name-error" role="alert" hidden></p>
+        </div>
+
+        <!-- Телефон -->
+        <div class="field">
+          <label class="field__label" for="booking-phone">
+            Телефон <span class="field__required" aria-hidden="true">*</span>
+          </label>
+          <input
+            class="field__input"
+            id="booking-phone"
+            name="phone"
+            type="tel"
+            inputmode="tel"
+            autocomplete="tel"
+            required
+            maxlength="25"
+            placeholder="+998 90 123 45 67"
+            aria-required="true"
+            aria-describedby="booking-phone-error"
+          >
+          <p class="field__error" id="booking-phone-error" role="alert" hidden></p>
+        </div>
+
+        <!-- Услуга -->
+        <div class="field">
+          <label class="field__label" for="booking-service">
+            Услуга <span class="field__required" aria-hidden="true">*</span>
+          </label>
+          <select
+            class="field__input field__input--select"
+            id="booking-service"
+            name="service"
+            required
+            aria-required="true"
+            aria-describedby="booking-service-error"
+          >
+            <option value="" disabled selected>Выберите услугу</option>
+            <option value="polish">Полировка кузова</option>
+            <option value="interior">Химчистка салона</option>
+            <option value="ceramic">Керамическое покрытие</option>
+            <option value="film">Защитная плёнка</option>
+          </select>
+          <p class="field__error" id="booking-service-error" role="alert" hidden></p>
+        </div>
+
+        <!-- Комментарий -->
+        <div class="field">
+          <label class="field__label" for="booking-comment">
+            Комментарий
+          </label>
+          <textarea
+            class="field__input field__input--textarea"
+            id="booking-comment"
+            name="comment"
+            rows="4"
+            maxlength="500"
+            aria-describedby="booking-comment-error"
+          ></textarea>
+          <p class="field__error" id="booking-comment-error" role="alert" hidden></p>
+        </div>
+
+        <!-- Согласие -->
+        <div class="field field--checkbox">
+          <label class="field__checkbox-label">
+            <input
+              class="field__checkbox"
+              id="booking-consent"
+              name="consent"
+              type="checkbox"
+              required
+              aria-required="true"
+              aria-describedby="booking-consent-error"
+            >
+            <span class="field__checkbox-text">
+              Согласен на обработку персональных данных
+              <span class="field__required" aria-hidden="true">*</span>
+            </span>
+          </label>
+          <p class="field__error" id="booking-consent-error" role="alert" hidden></p>
+        </div>
+
+        
+          <!-- Защита формы Cloudflare Turnstile -->
+          <div class="booking__turnstile">
+            <div
+              class="cf-turnstile"
+              data-sitekey="0x4AAAAAAFYYOt_-p0mRFXVB"
+              data-theme="dark"
+            ></div>
+          </div>
+
+
+        <!-- Кнопка -->
+        <button
+          class="booking__submit"
+          type="submit"
+          id="booking-submit"
+        >
+          <span class="booking__submit-label">Отправить заявку</span>
+        </button>
+
+        <!-- Глобальный статус -->
+        <p
+          class="booking__status"
+          id="booking-status"
+          role="status"
+          aria-live="polite"
+          hidden
+        ></p>
+      </form>
+    </div>
+  </section>
+
+
+  <section class="contact-info" id="contact-info" aria-labelledby="contact-info-title">
+    <div class="contact-info__container">
+      <div>
+        <p class="section__eyebrow">На связи</p>
+        <h2 class="section__title" id="contact-info-title">Обсудим <em>ваш автомобиль?</em></h2>
+        <p class="contact-info__text">Выберите услугу и оставьте заявку через форму выше. Этот сайт — учебный проект, реальные контактные данные и адрес студии ещё не добавлены.</p>
+      </div>
+      <a class="contact-info__cta" href="#contacts">Перейти к записи <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__brand" href="#hero" aria-label="AutoShine — наверх">Auto<span>Shine</span></a>
+      <p>Демонстрационный проект студии детейлинга · 2026</p>
+      <a href="#hero" class="footer__top">Наверх ↑</a>
+    </div>
+  </footer>
+
+
+<script
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
+  defer
+></script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
